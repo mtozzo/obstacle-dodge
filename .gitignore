@@ -40,9 +40,6 @@
 # JetBrains Rider project files
 .idea/
 
-# JetBrains Rider project files
-.idea/
-
 # VS Code directory
 .vscode/
 
