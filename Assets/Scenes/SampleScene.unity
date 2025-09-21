@@ -1133,6 +1133,7 @@ GameObject:
   - component: {fileID: 487109864}
   - component: {fileID: 487109868}
   - component: {fileID: 487109869}
+  - component: {fileID: 487109870}
   m_Layer: 0
   m_Name: McPlayer
   m_TagString: Untagged
@@ -1272,6 +1273,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Mover
   moveSpeed: 10
+--- !u!114 &487109870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487109863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a82fa25ab9b8a064dab7c52a70137895, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Scorer
 --- !u!1 &531118758
 GameObject:
   m_ObjectHideFlags: 0
@@ -2138,6 +2151,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bff37906439244ad4a738434f2ed454b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MaterialManager
+  hitMaterial1: {fileID: 0}
+  hitMaterial2: {fileID: 0}
 --- !u!4 &1773703266
 Transform:
   m_ObjectHideFlags: 0
