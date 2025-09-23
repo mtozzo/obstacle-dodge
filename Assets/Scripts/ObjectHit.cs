@@ -6,7 +6,12 @@ public class ObjectHit : MonoBehaviour
 {
     private void OnCollisionEnter(Collision other)
     {
-        Debug.Log("Collision detected with " + other.gameObject.name);
+        Debug.Log("Collision detected with " + other.gameObject.name + " this object has tag " + other.gameObject.tag + " and " + (other.gameObject.CompareTag("Player") ? "is" : "is not") + " the Player");
+
+        if (!other.gameObject.CompareTag("Player"))
+        {
+            return; 
+        }
 
         var currentMaterial = GetComponent<Renderer>().sharedMaterial; // Use sharedMaterial for comparison
     
