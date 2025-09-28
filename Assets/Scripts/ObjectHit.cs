@@ -8,14 +8,23 @@ public class ObjectHit : MonoBehaviour
     {
         Debug.Log("Collision detected with " + other.gameObject.name + " this object has tag " + other.gameObject.tag + " and " + (other.gameObject.CompareTag("Player") ? "is" : "is not") + " the Player");
 
+        if (gameObject.CompareTag("Hit")) // Check if already hit
+        {
+            Debug.Log("Already hit, ignoring.");
+            return; 
+        }
+        
         if (!other.gameObject.CompareTag("Player"))
         {
             return; 
         }
+        
+        gameObject.tag = "Hit";
 
         var currentMaterial = GetComponent<Renderer>().sharedMaterial; // Use sharedMaterial for comparison
     
         Debug.Log("Current material is " + currentMaterial);
+     
     
         if (currentMaterial == MaterialManager.Hit1)
         {
