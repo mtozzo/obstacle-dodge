@@ -6,7 +6,7 @@ public class Rotator : MonoBehaviour
     [SerializeField] private float rotationSpeedY = 10f;
     [SerializeField] private float rotationSpeedZ = 10f;
     
-    void Update()
+    private void FixedUpdate()
     {
         transform.Rotate(rotationSpeedX * Time.deltaTime, rotationSpeedY * Time.deltaTime, rotationSpeedZ * Time.deltaTime); // Rotate around the Y-axis
     }

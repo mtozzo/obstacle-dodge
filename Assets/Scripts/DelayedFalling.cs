@@ -5,8 +5,7 @@ public class DelayedFalling : MonoBehaviour
     [SerializeField] private float delay = 3f;
     private bool gravityEnabled = false;
 
-    // Update is called once per frame
-    private void Update()
+    private void FixedUpdate()
     {
         if (gravityEnabled || !(Time.time > delay)) return;
         
