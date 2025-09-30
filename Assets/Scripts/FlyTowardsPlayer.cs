@@ -3,7 +3,7 @@ using UnityEngine;
 public class FlyTowardsPlayer : MonoBehaviour
 {
     [SerializeField] private Transform playerPosition;
-    [SerializeField] private float speed = 5f;
+    [SerializeField] private float speed;
 
     private void FixedUpdate()
     {

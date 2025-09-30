@@ -150,7 +150,7 @@ Transform:
   m_GameObject: {fileID: 33456917}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -22.76, y: 16.91, z: -0.04}
+  m_LocalPosition: {x: -22.8, y: 16.91, z: 9.7}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -569,7 +569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlyTowardsPlayer
   playerPosition: {fileID: 487109867}
-  speed: 5
+  speed: 10
 --- !u!135 &263859137
 SphereCollider:
   m_ObjectHideFlags: 0
