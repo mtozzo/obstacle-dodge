@@ -6,7 +6,7 @@ public class ObjectHit : MonoBehaviour
 {
     private void OnCollisionEnter(Collision other)
     {
-        Debug.Log("Collision detected with " + other.gameObject.name + " this object has tag " + other.gameObject.tag + " and " + (other.gameObject.CompareTag("Player") ? "is" : "is not") + " the Player");
+        Debug.Log(gameObject.name + " collided with " + other.gameObject.name + " this object has tag " + other.gameObject.tag + " and " + (other.gameObject.CompareTag("Player") ? "is" : "is not") + " the Player");
 
         if (gameObject.CompareTag("Hit")) // Check if already hit
         {

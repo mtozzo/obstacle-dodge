@@ -1,19 +1,24 @@
 using System;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 public class FlyTowardsPlayer : MonoBehaviour
 {
-    [SerializeField] private Transform playerPosition;
     [SerializeField] private float speed;
     private Vector3 targetPosition;
-
-    private void Start()
+    private bool isMoving = false;
+    
+    public void StartMovingTowardsPlayer(Transform playerPosition)
     {
         targetPosition = playerPosition.position;
+
+        isMoving = true;
     }
 
     private void FixedUpdate()
     {
+        if (!isMoving) return;
+        
         MoveToPlayer();
         DestroyWhenDestinationReached();
     }
